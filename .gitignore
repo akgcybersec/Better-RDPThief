@@ -1,0 +1,10 @@
+*.obj
+*.lib
+*.exp
+*.pdb
+*.dll
+*.exe
+*.bin
+ref.txt
+*.zip
+.cursor/
