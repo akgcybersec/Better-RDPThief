@@ -160,6 +160,22 @@ Produces `tsclient.dll` for injection into mstsc.
 
 ---
 
+## Detection proof
+
+Built `tsclient.dll` from this repo and submitted it to VirusTotal. One of 70 engines flagged it: **Cynet** scored it malicious. The rest were clean on that scan.
+
+| Field | Value |
+|---|---|
+| File | `tsclient.dll` |
+| SHA-256 | `48e7032bf3bdcb98bcc86b7870b619faf13ac289a90c4615dc917041c9cd8d24` |
+| Size | 173.50 KB (x64 DLL) |
+
+![VirusTotal detection result for tsclient.dll](assets/detection-proof.png)
+
+Detection outcomes vary by build flags, code changes, signatures, and scanner updates. Included for transparency and defensive research context only.
+
+---
+
 ## Related
 
 - Original technique: [RdpThief by 0x09AL](https://github.com/0x09AL/RdpThief)
